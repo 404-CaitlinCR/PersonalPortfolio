@@ -1,0 +1,309 @@
+body {
+    background-color: #709772;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Acme';
+    color: #2c2121;
+}
+header{
+    text-align: center;
+    padding: auto;
+    margin-top: 30px;
+}
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #11674a;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 16px;
+    font-size: 17px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #a0eaac;
+    color: black;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.profile .title {
+    flex: 1;
+    text-align: lauto;
+    padding-left: 20px;
+    font-size: 30px;
+}
+.profile .title p{
+    font-size: 25px;
+}
+
+.profile img {
+    flex: 1;
+    max-width: 50%; /* Adjust this value as needed */
+    height: auto;
+    margin-left: 20px; /* Adjust this value to control the spacing between text and image */
+}
+.profile .links{
+    align-items: center;
+}
+.profile .links img{
+    width: 20%; /* Adjust this value to control the width of the image */
+    height: auto;
+    border-radius: 25px;
+}
+.profile .links :hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* This is for the projects page */
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns of equal width */
+    grid-template-rows: repeat(2, auto); /* Creates 2 rows with height based on content */
+    gap: 50px; /* Adjust the spacing between grid items */
+    width: auto; /* Adjust width as needed */
+    padding: 12px; /* Optional padding */
+    margin: 20px auto; /* Adds margin at the top and centers the grid horizontally */
+    justify-content: center; /* Centers content horizontally within the grid */
+    align-content: flex-start; /* Aligns content closer to the top */
+    height: auto; /* Adjust height as needed */
+    text-align: center;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns of equal width */
+    grid-template-rows: repeat(2, auto); /* Creates 2 rows with height based on content */
+    gap: 20px; /* Adjust the spacing between grid items */
+    width: 50%; /* Adjust width as needed */
+    padding: 12px; /* Optional padding */
+    justify-content: center; /* Centers content horizontally within the grid */
+    align-content: flex-start; /* Aligns content closer to the top */
+    height: auto; /* Adjust height as needed */
+    text-align: center;
+    background-color: rgb(240, 223, 192);
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px #11674a;
+    border: 4px solid #0d503a;
+    display: inline-block; /* Ensures the div adjusts to fit the image */
+    width: auto; /* Adjust width to fit the content */
+    height: auto; /* Adjust height to fit the content */
+    text-align: center;
+}
+
+.image {
+    position: relative;
+    width: auto;
+}
+
+.image_img {
+    display: block;
+    width: 100%;
+    position: relative; /* Ensure the image container is positioned for the overlay */
+    border-radius: 25px; /* Match the border radius of the overlay */
+    overflow: hidden; /* Ensure the overlay doesn't spill outside the image */
+}
+
+.image_img img {
+    width: 100%;
+    display: block;
+}
+
+.image_Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 25px; /* Match the border radius of the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hides overlay */
+    transition: opacity 0.25s;
+}
+.image_Overlay:hover{
+    opacity: 1;
+}
+
+.image_title{
+    font-weight: bold;
+}
+
+.image_discription{
+    margin-top: 0.25em;
+    padding: 5px;
+}
+.image_discription img {
+    width: 8%; /* Makes the image really small */
+    height: auto; /* Maintains aspect ratio */
+    filter: brightness(0) invert(1); /* Makes the image white */
+    border-radius: 10px;
+}
+
+div.project:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* This is for the contact me page */
+.container{
+    background-color: rgb(240, 223, 192);
+    margin: 20px auto;
+    width: 50%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #11674a;
+    border: 4px solid #0d503a;
+    border-width: 4px;
+    text-align: center;
+}
+.container .links img{
+    width: 10%;
+    height: auto;
+    border-radius: 15px;
+}
+.container .links img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* This is the section for the About me page */
+.intro, .education, .funFacts{
+    margin: 20px auto;
+    background-color: rgb(240, 223, 192);
+    padding: 15px;
+    width: 50%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px #11674a;
+    border: 4px solid #0d503a;
+}
+
+.intro, .education, .funFacts p{
+    font-size: 18px;
+}
+
+.funFacts img {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%;
+    height: auto;
+    border-radius: 25px; /* Optional: Adds rounded corners to the image */
+    
+}
+.line {
+    width: 100%; /* Makes the line span the width of the container */
+    height: 2px; /* Sets the thickness of the line */
+    background-color: #3C2F2F; /* Sets the color of the line */
+    margin: 10px 0; /* Adds spacing above and below the line */
+    border-radius: 25px;
+}
+/* This is the code for the back to top button */
+.backToTop {
+    background-color: rgb(240, 223, 192); /* Retro Burnt Orange */
+    color: rgb(8, 2, 2);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 3px solid #3C2F2F; /* Dark Brown Border */
+    box-shadow: 3px 3px 0px #3C2F2F;
+    text-transform: uppercase;
+    display: block;
+    width: fit-content; /* Makes the button only as wide as the text */
+    height: fit-content;
+    position: fixed; /* Makes the button sticky */
+    bottom: 20px; /* Position from the bottom of the viewport */
+    left: 20px; /* Position from the left of the viewport */
+}
+
+.backToTop:hover{
+    background-color: rgb(207, 186, 146);
+}
+
+/* This is the code for the not found page */
+.notfound-container {
+    margin-top: 50px;
+    background-color: rgb(240, 223, 192);
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    width: 40%;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    height: auto;
+    box-shadow: 10px 10px 0px #11674a;
+    border:4px solid #0d503a;
+}
+
+.notfound-container img {
+    border-radius: 25px;
+    align-items: center;
+    margin: 20px 0; /* Add spacing above and below the image */
+}
+
+.notfound-buttons {
+    display: flex; /* Use flexbox for button layout */
+    justify-content: space-between; /* Place buttons on both sides of the image */
+    width: 100%; /* Ensure buttons span the container width */
+    margin-top: 20px; /* Add spacing above the buttons */
+}
+
+.notfound-buttons .button {
+    flex: 1; /* Allow buttons to take equal space */
+    text-align: center; /* Center the text inside the button */
+}
+
+.notfound-buttons  a {
+    background-color: #11674a;
+    display: inline-block; /* Ensures it behaves like a block element */
+    padding: 10px 15px; /* Add padding for better appearance */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 8px; /* Add rounded corners */
+    border: 2px solid #3C2F2F; /* Add border for styling */
+    color: rgb(255, 255, 255); /* Set text color */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.notfound-buttons a:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+.notfound-title h1 {
+    background-color: rgb(240, 223, 192);
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px #11674a;
+    border:4px solid #0d503a;
+}
+
+footer{
+    padding: 15px;
+}
