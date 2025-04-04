@@ -10,7 +10,7 @@ body {
 }
 header{
     text-align: center;
-    padding: auto;
+    margin: 0 auto;
     margin-top: 30px;
 }
 /* Add a black background color to the top navigation */
@@ -18,7 +18,7 @@ header{
     background-color: #11674a;
     overflow: hidden;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 10px;
     width: 100%;
 
@@ -36,8 +36,8 @@ header{
 
 /* Change the color of links on hover */
 .nav a:hover {
-    background-color: #a0eaac;
-    color: black;
+    background-color: #a8e1a5;
+    color: #2c2121;
 }
 
 .profile {
@@ -105,8 +105,8 @@ header{
     text-align: center;
     background-color: rgb(240, 223, 192);
     border-radius: 25px;
-    box-shadow: 10px 10px 0px #11674a;
-    border: 4px solid #0d503a;
+    box-shadow: 10px 10px 0px #0d503a;
+    border: 4px solid #11674a;
     display: inline-block; /* Ensures the div adjusts to fit the image */
     width: auto; /* Adjust width to fit the content */
     height: auto; /* Adjust height to fit the content */
@@ -179,8 +179,8 @@ div.project:hover{
     width: 50%;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 10px 10px 0px #11674a;
-    border: 4px solid #0d503a;
+    box-shadow: 10px 10px 0px #0d503a;
+    border: 4px solid #11674a;
     border-width: 4px;
     text-align: center;
 }
@@ -195,14 +195,37 @@ div.project:hover{
 }
 
 /* This is the section for the About me page */
+.mini-nav{
+    background-color: rgb(240, 223, 192);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 4px solid #11674a;
+    box-shadow: 10px 10px 0px #0d503a;
+}
+.mini-nav a{
+    text-align: center;
+    padding: 5px 16px;
+    font-size: 17px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #2c2121;
+}
+
+/* Change the color of links on hover */
+.mini-nav a:hover {
+    background-color: rgb(207, 186, 146);
+    color: #2c2121;
+}    
+
 .intro, .education, .funFacts, .career-interest {
     margin: 20px auto;
     background-color: rgb(240, 223, 192);
     padding: 15px;
     width: 50%;
     border-radius: 25px;
-    box-shadow: 10px 10px 0px #11674a;
-    border: 4px solid #0d503a;
+    box-shadow: 10px 10px 0px #0d503a;
+    border: 4px solid #11674a;
 }
 
 .intro p, .education p, .funFacts p, .career-interest p {
@@ -261,8 +284,8 @@ div.project:hover{
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     height: auto;
-    box-shadow: 10px 10px 0px #11674a;
-    border:4px solid #0d503a;
+    box-shadow: 10px 10px 0px #0d503a;
+    border:4px solid #11674a;
 }
 
 .notfound-container img {
@@ -302,18 +325,6 @@ div.project:hover{
     background-color: rgb(240, 223, 192);
     padding: 15px;
     border-radius: 25px;
-    box-shadow: 10px 10px 0px #11674a;
-    border:4px solid #0d503a;
+    box-shadow: 10px 10px 0px #0d503a;
+    border:4px solid #11674a;
 }
-/* 
-footer {
-    padding: 15px;
-    background-color: #547a56;
-    color: #f2f2f2;
-    bottom: 0;
-    left: 0;
-    width: 90%;
-    text-align: center;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-} */
