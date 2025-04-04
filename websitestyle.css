@@ -198,7 +198,7 @@ div.project:hover{
 .mini-nav{
     background-color: rgb(240, 223, 192);
     margin-top: 20px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 25px;
     border: 4px solid #11674a;
     box-shadow: 10px 10px 0px #0d503a;
@@ -218,7 +218,7 @@ div.project:hover{
     color: #2c2121;
 }    
 
-.intro, .education, .funFacts, .career-interest {
+.intro, .education, .funFacts, .career-interest, .volunteer-work {
     margin: 20px auto;
     background-color: rgb(240, 223, 192);
     padding: 15px;
@@ -228,7 +228,7 @@ div.project:hover{
     border: 4px solid #11674a;
 }
 
-.intro p, .education p, .funFacts p, .career-interest p {
+.intro p, .education p, .funFacts p, .career-interest p, .volunteer-work p{
     font-size: 18px;
 }
 
