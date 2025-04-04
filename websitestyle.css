@@ -164,6 +164,7 @@ header{
     height: auto; /* Maintains aspect ratio */
     filter: brightness(0) invert(1); /* Makes the image white */
     border-radius: 10px;
+    margin-top: -10px;
 }
 
 div.project:hover{
