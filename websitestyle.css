@@ -197,7 +197,7 @@ div.project:hover{
 /* This is the section for the About me page */
 .mini-nav {
     background-color: rgb(240, 223, 192);
-    margin-top: 20px;
+    margin-right: 20px;
     padding: 10px;
     border-radius: 25px;
     border: 4px solid #11674a;
@@ -209,6 +209,7 @@ div.project:hover{
     display: flex;
     flex-direction: column; /* Make items stack vertically */
     align-items: center; /* Center items horizontally */
+
 }
 .mini-nav a{
     text-align: center;
